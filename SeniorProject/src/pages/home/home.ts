@@ -16,4 +16,8 @@ export class HomePage {
       window.open(url);
   }
 
+    connectBluetooth() {
+        alert("Connecting to Bluetooth!");
+    }
+
 }

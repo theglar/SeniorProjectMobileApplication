@@ -22220,6 +22220,10 @@ page-home .center {
   text-align: center;
 }
 
+page-home .bottom {
+  margin-top: 90%;
+}
+
 page-home .ionic-logo {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
