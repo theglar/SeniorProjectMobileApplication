@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -8,7 +9,7 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+    constructor(public navCtrl: NavController, private alertCtrl: AlertController) {
 
   }
   
@@ -17,7 +18,12 @@ export class HomePage {
   }
 
     connectBluetooth() {
-        alert("Connecting to Bluetooth!");
+        let alert = this.alertCtrl.create({
+            title: 'Bluetooth',
+            subTitle: 'Connecting to Bluetooth!',
+            buttons: ['Dismiss']
+        });
+        alert.present();
     }
 
 }
